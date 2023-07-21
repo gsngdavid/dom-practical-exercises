@@ -32,6 +32,16 @@ function displayTodoList() {
     list.appendChild(fragment);
 }
 
+function removeItemHandler(e) {
+    const icon = e.target.closest('.icon');
+    if(icon) {
+        const id = icon.dataset.id;
+        todoList.splice(id, 1);
+        displayTodoList();
+    }
+}
+
 // Attach event handlers
 
 form.addEventListener('submit', addItemHandler);
+list.addEventListener('click', removeItemHandler);
