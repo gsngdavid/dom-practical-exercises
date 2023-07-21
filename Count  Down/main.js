@@ -39,4 +39,3 @@ function startCountdownHandler(e) {
 // Attach event handlers
 
 form.addEventListener('submit', startCountdownHandler);
-toggle.addEventListener('click', startCountdownHandler);
