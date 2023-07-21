@@ -7,6 +7,8 @@ const result = document.getElementById('result');
 
 function startCountdownHandler(e) {
     e.preventDefault();
+    document.querySelector('button').disabled = true;
+
     let hrs = +form.hours.value;
     let mins = +form.mins.value;
     let sec = +form.sec.value;
@@ -15,7 +17,7 @@ function startCountdownHandler(e) {
         if (sec === 0) {
             if(mins === 0) {
                 if(hrs === 0) {
-                    result.innerHTML = "<p>Time's up</p>";
+                    result.innerHTML = "<p>Time's up (❁´◡`❁)</p>";
                     return clearInterval(countdown);
                 }
                 else {
@@ -37,3 +39,4 @@ function startCountdownHandler(e) {
 // Attach event handlers
 
 form.addEventListener('submit', startCountdownHandler);
+toggle.addEventListener('click', startCountdownHandler);
