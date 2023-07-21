@@ -13,6 +13,7 @@ function addItemHandler(e) {
     const item = form.todo.value.trim();
     if(item.length === 0 || todoList.includes(item)) return;
     todoList.push(item);
+    form.todo.value = '';
     displayTodoList();
 }
 

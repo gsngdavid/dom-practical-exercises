@@ -29,6 +29,7 @@ input, button {
     padding: 1rem;
     margin: 2rem auto;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
 }
 
 .header {
@@ -69,6 +70,7 @@ input, button {
 }
 
 ul {
+    font-size: .9rem;
     margin-top: 2rem;
 }
 
