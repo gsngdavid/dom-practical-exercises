@@ -86,6 +86,7 @@ input:checked + label {
 
 .icon {
     fill: red;
+    cursor: pointer;
 }
 
 .icon:hover {
