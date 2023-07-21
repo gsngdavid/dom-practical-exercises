@@ -26,11 +26,11 @@ body {
     border-bottom: 2px solid yellow;
 }
 
-.todo-list {
+ul {
     margin-top: 2rem;
 }
 
-.todo-item {
+ul li {
     list-style: none;
     display: flex;
     align-items: center;
