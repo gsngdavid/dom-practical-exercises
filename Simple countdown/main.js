@@ -14,3 +14,13 @@ const timerChange = setInterval (() => {
     }
     timer.textContent = --counter;
 } , 1000);
+
+function incrementCounterHandler(e) {
+    const seconds = +e.target.dataset.sec;
+    if(seconds) {
+        counter += seconds;
+    }
+}
+
+// Attach event handlers
+actions.addEventListener('click', incrementCounterHandler);
