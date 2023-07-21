@@ -38,6 +38,10 @@ ul li {
     padding-bottom: .8rem;
 }
 
+input:checked + label {
+    text-decoration: line-through;
+}
+
 .icon {
     fill: red;
 }
