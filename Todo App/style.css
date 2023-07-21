@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+}
+
+.container {
+    width: 90%;
+    max-width: 30rem;
+    padding: 1rem;
+    margin: 2rem auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header {
+    padding-bottom: 1rem;
+    border-bottom: 2px solid yellow;
+}
+
+.todo-list {
+    margin-top: 2rem;
+}
+
+.todo-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    fill: red;
+}
