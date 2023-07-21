@@ -7,7 +7,7 @@ const result = document.getElementById('result');
 
 function startCountdownHandler(e) {
     e.preventDefault();
-    document.querySelector('button').disabled = true;
+    document.querySelector('button').remove();
 
     let hrs = +form.hours.value;
     let mins = +form.mins.value;
