@@ -31,10 +31,19 @@ h1 {
     text-align: center;
 }
 
+#result {
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#result span {
+    font-size: 3rem;
+}
+
 .inputs {
     display: flex;
     gap: 1rem;
-    margin: 2rem 0;
 }
 
 label {
