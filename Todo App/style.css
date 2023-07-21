@@ -13,6 +13,16 @@ body {
     background-color: aliceblue;
 }
 
+input:focus, button:focus {
+    outline: none;
+    border: none;
+}
+
+input, button {
+    outline: none;
+    border: none;
+}
+
 .container {
     width: 90%;
     max-width: 30rem;
@@ -24,6 +34,38 @@ body {
 .header {
     padding-bottom: 1rem;
     border-bottom: 2px solid yellow;
+}
+
+.header form {
+    display: flex;
+    width: 100%;
+    border: 1px solid transparent;
+}
+
+.header form:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    border-radius: 4px;
+}
+
+.header form:has(input:focus) {
+    border-color: orange;
+}
+
+.header input {
+    flex: 1;
+    padding: .5rem .9rem;
+    border-radius: 4px 0 0 4px;
+}
+
+.header button {
+    flex: 0;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    background-color: azure;
+    border-radius: 0 4px 4px 0;
+}
+.header button:hover {
+    background-color: rgb(196, 250, 250);
 }
 
 ul {
@@ -44,4 +86,9 @@ input:checked + label {
 
 .icon {
     fill: red;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    transition: transform 300ms ease-in-out;
 }
