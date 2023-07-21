@@ -17,6 +17,10 @@ function addItemHandler(e) {
 }
 
 function displayTodoList() {
+    if(todoList.length === 0) {
+        list.innerHTML = '<p>No items yet!';
+        return;
+    }
     const fragment = document.createDocumentFragment();
     for (let i = 0; i < todoList.length; i++) {
         const li = document.createElement('li');
