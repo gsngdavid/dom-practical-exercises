@@ -21,6 +21,7 @@ body {
 .message {
     position: relative;
     padding: 1rem;
+    margin-bottom: 1rem;
     background-color: #EDF5E1;
     border-radius: 5px;
 }
